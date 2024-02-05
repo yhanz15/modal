@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="backdrop is-hidden" data-modal="3">
+      <div class="modal-explore-new">
+        <button
+          class="modal-explore-new-close-btn"
+          type="button"
+          data-close-modal
+        >
+          <svg class="modal-explore-new-close-btn-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-close-28"></use>
+          </svg>
+        </button>
+        <picture>
+          <!-- Desktop -->
+          <source
+            type="image/webp"
+            srcset="
+              /img/desktop-and-tab/pop-up1x.webp 1x,
+              /img/desktop-and-tab/pop-up2x.webp 2x,
+              /img/desktop-and-tab/pop-up3x.webp 3x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              /img/desktop-and-tab/pop-up1x.jpg 1x,
+              /img/desktop-and-tab/pop-up2x.jpg 2x,
+              /img/desktop-and-tab/pop-up3x.jpg 3x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <!-- Tablet -->
+          <source
+            type="image/webp"
+            srcset="
+              /img/desktop-and-tab/pop-up1x.webp 1x,
+              /img/desktop-and-tab/pop-up2x.webp 2x,
+              /img/desktop-and-tab/pop-up3x.webp 3x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/desktop-and-tab/pop-up1x.jpg 1x,
+              /img/desktop-and-tab/pop-up2x.jpg 2x,
+              /img/desktop-and-tab/pop-up3x.jpg 3x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <!-- Mobile -->
+          <source
+            type="image/webp"
+            srcset="
+              /img/mobile/pop-up1x.webp 1x,
+              /img/mobile/pop-up2x.webp 2x,
+              /img/mobile/pop-up3x.webp 3x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              /img/mobile/pop-up1x.jpg 1x,
+              /img/mobile/pop-up2x.jpg 2x,
+              /img/mobile/pop-up3x.jpg 3x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="explore-new-img"
+            src="/img/mobile/pop-up1x.jpg"
+            alt="Chocolate"
+            width="538"
+            height="196"
+            loading="lazy"
+          />
+        </picture>
+        <div class="explore-new_box">
+          <p class="modal-explore-new-text">
+            Explore our<br />
+            <span class="modal-explore-new-text-accent">new chocolate</span>
+            first!
+          </p>
+          <div class="modal-explore-new-wrapper">
+            <form class="modal-explore-new-form" data-form="6">
+              <label class="modal-explore-new-form-filed">
+                <input
+                  class="modal-explore-new-input"
+                  type="email"
+                  pattern="^[a-zA-Z0-9._%+-]+_?[a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  name="user_mail"
+                  required
+                  placeholder="Enter your email"
+                />
+              </label>
+              <button class="modal-explore-new-form-sumbit" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-mobile-wrap js-menu-container">
+      <button type="button" class="header-close-btn js-close-menu">
+        <svg class="header-close-icon" width="28" height="28">
+          <use href="/img/sprite.svg#icon-close-28"></use>
+        </svg>
+      </button>
+      <div class="container header-mobile-wrapper">
+        <div class="header-mobile-menu-wrap">
+          <ul class="header-mobile-menu">
+            <li class="header-mobile-menu-item">
+              <a class="header-mobile-menu-link" href="#home">Home</a>
+            </li>
+            <li class="header-mobile-menu-item">
+              <a class="header-mobile-menu-link" href="#how-its-made"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="header-mobile-menu-item">
+              <a class="header-mobile-menu-link" href="#our-products"
+                >Our products</a
+              >
+            </li>
+            <li class="header-mobile-menu-item">
+              <a class="header-mobile-menu-link" href="#top-sellers"
+                >Top sellers</a
+              >
+            </li>
+            <li class="header-mobile-menu-item">
+              <a class="header-mobile-menu-link" href="#chocolate-is-loved"
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <ul class="header-mobile-social-list">
+          <li class="header-mobile-social-item">
+            <a
+              aria-label="instagram"
+              class="header-mobile-social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><svg class="header-mobile-social-icon" width="22" height="22">
+                <use href="/img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-mobile-social-item">
+            <a
+              aria-label="twitter"
+              class="header-mobile-social-link"
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="header-mobile-social-icon" width="20" height="20">
+                <use href="/img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
